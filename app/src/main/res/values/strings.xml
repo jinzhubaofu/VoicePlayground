@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VoicePlayground</string>
+    <string name="action_settings">haha</string>
+    <string name="action_refresh">autorenew</string>
+    <string name="url_hint">输入网址</string>
+    <string name="url_title">efe voice playground</string>
+    <string name="web_view_tile">test</string>
+    <string name="title_activity_page">PageActivity</string>
+    <string name="main_demo_button">参看演示</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context="com.baidu.efe.voiceplayground.PageActivity"
+    android:id="@+id/page_layout"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="?attr/colorPrimary">
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="0px"
+            android:layout_height="0px"/>
+
+        <EditText
+            android:id="@+id/toolbar_uri"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textUri"
+            android:nextFocusUp="@id/toolbar_uri"
+            android:nextFocusLeft="@id/toolbar_uri"
+            android:hint="@string/url_hint"
+            android:background="@color/background_material_light"
+            android:singleLine="true"
+            android:padding="4dp"
+            android:imeOptions="actionGo" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
