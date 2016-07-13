@@ -71,8 +71,6 @@ public class PageActivity extends AppCompatActivity implements EditText.OnEditor
 
         uri = uri.startsWith("http") ? uri : "http://" + uri;
 
-        Log.wtf("page", uri);
-
         webView.loadUrl(uri);
 
         EditText toolbarUri = (EditText) findViewById(R.id.toolbar_uri);
